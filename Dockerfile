@@ -1,0 +1,5 @@
+FROM busybox
+
+ARG GITHUB_TOKEN
+
+RUN test -n "$GITHUB_TOKEN"
