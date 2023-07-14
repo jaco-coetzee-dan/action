@@ -1,0 +1,10 @@
+name: "Test"
+inputs:
+  token:
+    description: "token to use"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{ inputs.token }}

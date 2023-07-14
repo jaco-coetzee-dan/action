@@ -1,5 +1,7 @@
 FROM busybox
 
-ARG GITHUB_TOKEN
+# A token we need to something
+ARG TOKEN
 
-RUN test -n "$GITHUB_TOKEN"
+# Verify that we received the TOKEN as a build-arg
+RUN test -n "$TOKEN"
